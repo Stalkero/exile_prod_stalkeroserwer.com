@@ -1,0 +1,2 @@
+@echo off
+arma3server_x64.exe "-profiles=C:\Users\a3exile\Desktop\exile\server\profile" -BEPath=C:\ExileServers\ExileAltis\battleye -autoINIT -port=2302 -config=CONFIG_server.cfg -world=empty "-mod=@exile;@CBA_A3;@ACSTG;@EnhancedMovement;@EnhancedMovementRework;@AdvancedTowing;@AdvancedUrbanRappelling;@BetterInventory;@DeathandHitreactions;@EnhancedGPS;@EnhancedSoundscape;@ExocetImmersiveReloads;@LadderTweakRemastered;@ReducedHaze;@Removestamina;@RealLightingandWeather;@DynaSound2" "-servermod=@extdb3;@Exileserver;@AdminToolkitServer"
