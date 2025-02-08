@@ -3,6 +3,7 @@
 This repository houses the configuration files for the Exile Mod utilized on the Arma 3 server located at [stalkeroserwer.com](https://stalkeroserwer.com).
 
 ## Structure
+- **@extDB3/** - ExtDB3 with support for 64 bit servers
 - **@exileserver/** - Exile **server-side**
 - **@AdminToolKit/** - Admin Toolkit for Exile **client-side**
 - **@AdminToolKitServer/** - Admin Toolkit for Exile **server-side**
