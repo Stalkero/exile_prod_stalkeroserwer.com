@@ -4,7 +4,11 @@ This repository houses the configuration files for the Exile Mod utilized on the
 
 ## Structure
 - **@exileserver/** - Exile **server-side**
+- **@AdminToolKit/** - Admin Toolkit for Exile **client-side**
+- **@AdminToolKitServer/** - Admin Toolkit for Exile **server-side**
 - **mpmissions/Exile.Altis/** - Exile **Altis** map configs
 - **start.bat** - Launch script
 
 Feel free to copy redistribute or edit
+
+For the sake of PBO's integrity im uploading only the packed version
