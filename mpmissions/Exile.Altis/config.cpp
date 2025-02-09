@@ -3777,7 +3777,7 @@ class CfgExileLootSettings
 	 *
 	 * You can also cap it at a maximum value. See below.
 	 */
-	maximumPositionCoverage = 50;
+	maximumPositionCoverage = 70;
 
  	/**
  	 * Limit the number of loot positions per building. If the 
@@ -3787,14 +3787,14 @@ class CfgExileLootSettings
  	 * This results in 30 loot positions and that is too much. So we
  	 * cap this at 10
  	 */
-	maximumNumberOfLootSpotsPerBuilding = 10;
+	maximumNumberOfLootSpotsPerBuilding = 15;
 
 	/**
 	 * Exile spawns a random number of items per loot spot. This 
 	 * is the upper cap for that. So 3 means it could spawn 1, 2 
 	 * or 3.
 	 */
-	maximumNumberOfItemsPerLootSpot = 6;
+	maximumNumberOfItemsPerLootSpot = 8;
 
 	/**
 	 * Radius in meter to spawn loot AROUND each player.
@@ -4008,6 +4008,14 @@ class CfgInteractionMenus
 				condition = "call ExAd_XM8_DV_fnc_canPack";
 				action = "call ExAd_XM8_DV_fnc_pack";
 			};
+			
+			class ServicePointRepair: ExileAbstractAction
+			{
+				title = "Access Vehicle Service Point";
+				condition = "(count (nearestObjects [(getPos player), buildingObjects ,vmsRange]) >0) && (enableServicePoint == 1) && ['playerCall', getPos player] Call Bones_fnc_vmsChecks";
+				action = "_this call Bones_fnc_showServicePointDialogue";
+			};
+
 		};
 	};
 
@@ -4094,6 +4102,13 @@ class CfgInteractionMenus
 				title = "Rotate Right";
 				condition = "call ExileClient_object_vehicle_interaction_show";
 				action = "[ExileClientInteractionObject,15] call ExileClient_object_vehicle_rotate";
+			};
+
+			class ServicePointRepair: ExileAbstractAction
+			{
+				title = "Access Vehicle Service Point";
+				condition = "(count (nearestObjects [(getPos player), buildingObjects ,vmsRange]) >0) && (enableServicePoint == 1) && ['playerCall', getPos player] Call Bones_fnc_vmsChecks";
+				action = "_this call Bones_fnc_showServicePointDialogue";
 			};
 		};
 	};

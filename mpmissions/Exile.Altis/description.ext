@@ -75,6 +75,7 @@ showHUD[] =
 #include "config.cpp"
 #include "d2k\dialogs.hpp"
 #include "ExAdClient\ExAd.cpp"
+#include "custom\vehicleManagementSystem\GUI\Bones_Service_Point.hpp"
 #include "custom\xm8_apps\CHVD\dialog.hpp"
 #include "custom\xm8_apps\bramarecipes\GUI\defines.hpp"
 #include "custom\xm8_apps\bramarecipes\GUI\dialog.hpp"
